@@ -21,7 +21,7 @@ class SignIn extends React.Component {
         this.setState({ loading: true })
         const { email, password } = this.state;
 
-        fetch('http://localhost:5000/api/login', {
+        fetch('/api/login', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
